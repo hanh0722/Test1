@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0274be;
+    background-color: #48944b;
     color: white;
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -71,8 +71,25 @@
     align-items: center;
     height: 15vh;
 }
+.logo1{
+    width: 30%;
+}
+.logo1 img{
+    width: 100%;
+}
+.btn{
+    background-color: #57ab55;
+}
+.btn:hover{
+    background-color: #48944b;
+}
 .main{
-    background-image: url(https://tropx.cz/wp-content/uploads/2021/03/h2-slider-image-1.jpg);
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://www.pharmacyquality.com/wp-content/uploads/2020/02/Newhappypharmacist.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -84,6 +101,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
+    color: white;
 }
 .left-main{
     width: 50%;
@@ -100,7 +118,7 @@
 }
 .left-main a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .btn{
     padding: 10px 30px;
@@ -114,16 +132,19 @@
     align-items: center;
 }
 .btn1:hover, .btn2:hover{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #48944b;
     color: white;
+    border: 1px solid #ddd;
+}
+.btn1, .btn2{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: .6rem;
 }
 button a{
     text-decoration: none;
 }
-.btn1 a{
-    color: black;
-}
-.btn2 a{
+.btn2 a, .btn1 a{
     color: white;
 }
 .next{
@@ -247,12 +268,12 @@ button a{
     overflow: scroll;
 }
 .left-form input:last-child{
-    background-color: #0274be;
+    background-color: #48944b;
     color: white;
     font-weight: bold;
 }
 footer{
-    background-color: #0274be;
+    background-color: #eef4f5;
 }
 .footer-1{
     display: flex;
@@ -260,7 +281,7 @@ footer{
     align-items: center;
     padding: 2% 0%;
     margin: 0% 10%;
-    color: white;
+    color: #48944b;
     border-bottom: 1px solid #ccc;
 }
 .footer-1 p{
@@ -270,11 +291,11 @@ footer{
     margin-bottom: 10%;
 }
 .footer-1 a{
-    color: white;
+    color: #48944b;
     text-decoration: none;
 }
 .first{
-    width: 12%;
+    width: 30%;
     height: 100%;
 }
 .second{
@@ -286,6 +307,7 @@ footer{
 }
 .second p:first-child{
     font-size: 2rem;
+    font-weight: bold;
 }
 .third{
     width: 20%;
@@ -296,8 +318,7 @@ footer{
 .third i{
     width: 35px;
     height: 35px;
-    background-color: white;
-    color: #0274be;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,10 +329,90 @@ footer{
     width: 100%;
 }
 .bottom{
-    color: white;
+    color: #57ab55;
     text-align: center;
-    padding: 2% 0% 5% 0%;
+    padding: 2% 0% 3% 0%;
+    font-weight: bold;
 }
+.second-type{
+    border-top: 1px solid #ddd;
+    display: flex;
+    padding: 5%;
+    justify-content: space-around;
+}
+.first-main{
+    width: 30%;
+}
+.second-main{
+    width: 30%;
+    border-right: 1px solid #ddd;
+}
+.second-main p:nth-child(1){
+    color: #777;
+    font-size: .8rem;
+}
+.second-main span{
+    color: #48944b;
+}
+.second-main p:nth-child(2){
+    padding-bottom: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.second-main p:nth-child(3){
+    border-top: 1px solid #ddd;
+    padding: 5% 0%;
+    width: 90%;
+}
+.third-main{
+    width: 30%;
+}
+.first-main img{
+    width: 100%;
+}
+.next-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0% 5%;
+}
+.card-product{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-product img{
+    width: 100%;
+}
+.box-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0%;
+}
+.box-product a{
+    color: black;
+    text-decoration: none;
+}
+.box-product p:nth-child(2){
+    font-size: .8rem;
+    color: #777;
+    text-align: left;
+}
+.btn0 a{
+    color: white;
+}
+.img-zoom-container{
+    position: relative;
+}
+.img-zoom-lens{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+  }
 @media screen and (max-width: 1200px){
     .button{
         width: 80%;
@@ -493,6 +594,13 @@ footer{
     }
     .footer-1 p:first-child{
         margin-bottom: 5%;
+    }
+    .second-type{
+        display: block;
+    }
+    .first-main, .second-main{
+        width: 100%;
+        border-right: none;
     }
 }
 

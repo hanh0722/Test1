@@ -51,18 +51,24 @@
 .hamburger div:last-child{
     margin-bottom: 0;
 }
-.logo, .ct-block{
+.logo{
     display: none;
 }
 .list-items a, .nav-logo a{
     text-decoration: none;
     color: #0274be;
 }
+.list-items a{
+    color: white;
+}
 .nav-logo{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.logo1 img{
+    width: 100% !important;
 }
 .next-nav{
     width: 90%;
@@ -503,6 +509,9 @@ footer{
     .nav-logo{
         display: none;
     }
+    .list-items a{
+        color: #0274be;
+    }
     .main{
         background-position: right;
         display: flex;
@@ -522,6 +531,9 @@ footer{
     }
     .right-main{
         width: 0;
+    }
+    .logo1{
+        width: 50%;
     }
     .box{
         display: block;

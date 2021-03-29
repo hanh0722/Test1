@@ -13,6 +13,7 @@
     color: white;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #f8f8f8;
 }
 .list-items ul{
     width: 90%;
@@ -475,6 +476,9 @@ footer{
         display: block;
         color: #0274be;
     }
+    .hamburger div{
+        background-color: white;
+    }
     .hamburger:hover{
         cursor: pointer;
     }
@@ -498,7 +502,7 @@ footer{
     }
     .list-items{
         height: 15vh;
-        background-color: white;
+        background-color: #48944b;
     }
     .left-items, .right-items{
         display: none;
@@ -533,7 +537,10 @@ footer{
         width: 0;
     }
     .logo1{
-        width: 50%;
+        width: 60%;
+    }
+    .logo1 img{
+        width: 100%;
     }
     .box{
         display: block;
